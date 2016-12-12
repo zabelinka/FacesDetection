@@ -30,18 +30,18 @@ namespace FacesDetectionWebApp
                 try
                 {
                     FileUploadControl.SaveAs(Server.MapPath("Data") + "\\" + fileName);
-                    UploadStatusLabel.Text = "File " + fileName + " uploaded!";
-                    UploadedImage.ImageUrl = "~/Data/" + fileName;
 
                     Image<Bgr, byte> img = DetectFaces(fileName);
 
                     // display result
                     img.Save(Server.MapPath("Data") + "\\result.jpg");
-                    UploadedImage.ImageUrl = "~/Data/result.jpg";
+                    
+                    UploadedImage.ImageUrl = "~/Data/" + fileName;
+                    ResultImage.ImageUrl = "~/Data/result.jpg";
                 }
                 catch (Exception ex)
                 {
-                    UploadStatusLabel.Text = "The file could not be uploaded. The following error occured: " + ex.Message;
+                    UploadStatusLabel.Text = "ERROR: The file could not be uploaded. The following error occured: " + ex.Message;
                 }  
             }
         }
@@ -62,19 +62,19 @@ namespace FacesDetectionWebApp
                 // drow found rectangles on image
                 foreach (var face in face_rectangles)
                 {
-                    img.Draw(face, new Bgr(255, 255, 255), 3);
+                    img.Draw(face, new Bgr(255, 255, 255), 2);
                 }
 
                 // the same for eyes
-                var eye_rectangles = eyeCascade.DetectMultiScale(grayImage);
+                /*var eye_rectangles = eyeCascade.DetectMultiScale(grayImage);
                 foreach (var eye in eye_rectangles)
                 {
                     img.Draw(eye, new Bgr(0, 0, 255), 2);
-                }
+                }*/
             }
             catch (Exception ex)
             {
-                UploadStatusLabel.Text = "Faces could not be detected. The following error occured: " + ex.Message;
+                UploadStatusLabel.Text = "ERROR: Faces could not be detected. The following error occured: " + ex.Message;
             }
 
             return img;

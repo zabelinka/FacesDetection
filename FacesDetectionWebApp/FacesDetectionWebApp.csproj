@@ -78,7 +78,11 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="default.aspx" />
+    <Content Include="Images\adele_result.jpg" />
     <Content Include="Images\Cat.jpg" />
+    <Content Include="Images\header.jpg" />
+    <Content Include="Images\test.jpg" />
+    <Content Include="Images\test_result.jpg" />
     <Content Include="msvcp120.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
