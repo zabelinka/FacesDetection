@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace FasesDetectionWebApp {
+namespace FacesDetectionWebApp {
     
     
     public partial class _default {

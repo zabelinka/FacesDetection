@@ -13,7 +13,7 @@ using Emgu.CV.Structure;
 using Emgu.CV.Cvb;
 using Emgu.Util;
 
-namespace FasesDetectionWebApp 
+namespace FacesDetectionWebApp 
 {
     public partial class _default : System.Web.UI.Page
     {
