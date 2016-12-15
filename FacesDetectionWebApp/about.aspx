@@ -1,10 +1,10 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="default.aspx.cs" Inherits="FacesDetectionWebApp._default" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="about.aspx.cs" Inherits="FacesDetectionWebApp._default" %>
 
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <title>Faces Detection</title>
+    <title>About</title>
 
     <link href="~/Content/Style.css" rel="stylesheet" /> 
     <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" />
@@ -29,25 +29,16 @@
 
         </div>
 
-    <form id="form1" runat="server">
-        <div>
-
-            <label class="file-upload">
-                <asp:FileUpload ID="FileUploadControl" Text="Choose a file" runat="server"></asp:FileUpload>
-            </label>
-
-            <asp:Button class="file-upload" ID="UploadButton" OnClick="UploadButton_Click" runat="server" ></asp:Button>
-            <br />
-
-            <asp:Label ID="UploadStatusLabel" runat="server" Style="color: #FF0000"></asp:Label>
-            <br />
-            <br />
-            <asp:Image ID="UploadedImage" runat="server" Width="49%" ImageUrl="~/Images/test.jpg"></asp:Image>
-
-            <asp:Image ID="ResultImage" runat="server" Width="49%" ImageUrl="~/Images/test_result.jpg" />
-
+        <div class="about-content">
+            <h4>About: </h4>
+            <p>
+                This project was made as a task of the Saint-Petersburg State University course "The Basics of The Grid and Cloud Computing". <br />
+                Used technologies: ASP.NET, EmguCV, Microsoft Azure. 
+            </p>
+            <h4>Contacts: </h4>
+            <p>Zabelina Tatiana <br /> ts.zabelina@gmail.com</p>
         </div>
-    </form>
+    
 
         <div class="footer">
             <div class="float-left">

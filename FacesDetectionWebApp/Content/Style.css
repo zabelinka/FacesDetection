@@ -1,0 +1,126 @@
+﻿body{
+    font-family: Lobster;
+    background-color: #d8b398;
+}
+.container {
+            width: 1000px;
+            margin: auto;
+}
+
+.header{
+    background-image: url("../Images/header.jpg");
+    height: 258px;
+    
+}
+
+.site-title{
+    font-size: 42pt;
+    text-shadow: 0px 0px 30px white;
+    margin: 0;
+    padding: 30px 80px 0;
+}
+.slogan{
+    font-size: 20pt;
+    margin: 0;
+    padding: 5px 140px;
+    color: #f6ede2;
+}
+.header a{
+    text-decoration: none;
+    color: black;
+}
+#menu{
+    margin-left: 40px;
+    margin-top: 60px;
+}
+#menu>li{
+    display:inline;
+    margin: 40px;
+    font-size: 22pt;
+    
+}
+#menu>li>a{
+    color: #334245;
+}
+#menu>li>a:hover{
+    text-decoration:underline;
+}
+
+#UploadedImage{
+    padding: 0;
+    margin: 0;
+}
+#ResultImage{
+    padding: 0;
+    margin: 0;
+}
+
+
+
+.footer{
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 10pt;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+#form1{
+    text-align:center;
+    padding-top: 30px;
+    
+}
+
+
+
+.file-upload{
+    display: inline-block;
+    overflow: hidden;
+    text-align: center;
+    vertical-align: middle;
+    border: 1px solid #aec0cc;
+    color: #fff;
+    border-radius: 2px;
+    margin: 0 30px;
+}
+.file-upload{
+    background-image: url(../Content/loadFileBtn.png);
+}
+#UploadButton {
+    background-image: url(../Content/detectFacesBtn.png);
+    margin: 0 30px;
+    padding: 0;
+    height: 52px;
+}
+
+.file-upload:hover {
+    opacity: 0.8;
+}
+
+/* The button size */
+.file-upload {
+    height: 50px;
+    width: 200px;
+}
+
+.file-upload input {
+        
+        /* Loses tab index in webkit if width is set to 0 */
+        opacity: 0;
+        filter: alpha(opacity=0);
+}
+
+#UploadStatusLabel{
+    margin-top: 10px;
+    font-family: Consolas;
+    color: #ba1600;
+}
+
+
+.about-content{
+    font-family: 'Roboto', sans-serif;
+    padding: 0 30px 30px;;    
+}
+.about-content h4{
+    font-family: 'Roboto', sans-serif;
+}
